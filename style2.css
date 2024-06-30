@@ -1,0 +1,254 @@
+/*
+    colors:
+    background: #ffbdcb
+    darker pink: #f893b5
+    outline: #b64c81
+    light blue: #bde0fe
+*/
+
+body{
+    background-color: #ffbdcb;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+    make it so that the leaves from style 1 are not shown
+*/
+.header{
+    display:none;
+}
+
+/*
+    navigation bar at top of page
+*/
+.nav{
+    width: 100%;
+    display: inline-flex;
+    justify-content: left;
+}
+nav ul{
+    background-color: #f893b5;
+    height: 80px;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline-flex;
+    align-items: center;
+    position: fixed;
+    overflow: hidden;
+    z-index: 10;
+}
+nav li a{
+    font-size: 20px;
+    width: auto;
+    overflow: hidden;
+    text-align: center;
+    text-decoration-line: none;
+    background-color: #bde0fe;
+    height: 20px;
+    padding: 20px;
+    color: black;
+    display: inline-flex;
+    justify-content: center;
+    border: 2px solid #b64c81;
+    margin: 5px;
+}
+nav li:first-child{
+    padding-left: 5px;
+}
+/*
+    colors for links on the page
+*/
+a:link{
+    color: #8B008B;
+}
+a:visited{
+    color: #FF00FF;
+}
+a:hover{
+    color: #8B008B;
+}
+
+/*
+    style change button formatting
+*/
+button{
+    background-color: #bde0fe;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    color: #8B008B;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-flex;
+}
+.button:visited{
+    color: #FF00FF;
+}
+.button:hover{
+    color: #8B008B;
+}
+
+
+.intro{
+    margin-top: 120px;
+    align-items: center;
+}   
+.intro h1{
+    text-align: center;
+}
+.intro iframe{
+    width: 900px;
+    height: 700px;
+}
+#resume{
+    border: 2px solid black;
+    background-color: #bde0fe;
+    text-align: center;
+    display: flex;
+    flex: 3;
+    flex-basis: 100%;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 20%;
+    height: 80%
+}
+.columns{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-basis: 100%;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 20%;
+}
+#rows{
+    flex-direction: row;
+    border: 2px solid black;
+    background-color: #bde0fe;
+    margin: 10px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-right: 20px;
+    width: 100%;
+    flex-basis: 100%;
+}
+#rows h3{
+    text-align: center;
+}
+
+/*
+    wrapper and boxes used to have the two separate columns
+*/
+.style-2-wrapper{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.style-2-wrapper h1{
+    text-align: center;
+}
+.style-2-wrapper h4{
+    text-align: center;
+}
+#first-box{
+    border: 2px solid black;
+    background-color: #bde0fe;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex: 3;
+    flex-basis: 100%;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+#second-box{
+    border: 2px solid black;
+    background-color: #bde0fe;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-basis: 100%;
+    flex: 1;
+    margin: 10px;
+    margin-top: 120px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+/*
+    formatting used for index content
+*/
+.body-text{ 
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+#body-image{
+    border: 2px solid black;
+    background-color: #bde0fe;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    width: 340px;
+    align-content: center;
+    justify-content: center;
+    height: 340px;
+}
+#body-image img{
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+}
+#intro-words{
+    border: 2px solid black;
+    background-color: #bde0fe;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 250px;
+    flex: 20;
+    margin: 10px;
+    padding: 10px;
+    width: auto;
+}
+
+
+/*
+    formatting for the clickable images on the bottom of the screen
+*/
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color: #f893b5;
+    position: fixed;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    border: none;
+    margin-top: 100px;
+    padding: 5px;
+    text-decoration-line: none;
+}
+.footer img{
+    width: 75px;
+    height: 75px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
